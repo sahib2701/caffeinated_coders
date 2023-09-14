@@ -13,12 +13,12 @@ Submission for Code fury by team Caffeinated Coders
 5) To run the project right click on project and select run as -> run on server
 
 Login credentials for employee:
-username = Sahib
-password = kapoor
+username = Ishika
+password = 1234
 
 Login credentials for customer:
-username = default
-password = 12345
+username = Ishika
+password = 1234
 
 ## Possible errors while execution
 
