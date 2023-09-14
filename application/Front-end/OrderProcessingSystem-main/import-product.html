@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Import Product</title>
+
+    <link rel="shortcut icon" type="image/png" href="assests/img/coffee-solid.svg" />
+    <link rel="stylesheet" href="assests/css/employee-page.css" />
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="assests/js/import-product.js"></script>
+    <script src="https://kit.fontawesome.com/3055f91a99.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="main-header">
+        <div>
+            <div>
+                <img id="header-logo" src="assests/img/coffee-solid.svg" alt="Logo" />
+                <div>
+                    Order Processing System
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- LOADING PAGE -->
+    <div id="loading-page">
+        <div>
+            <img src="assests/img/coffee-solid.svg" />
+            <div id="dot-loader">
+                <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <section id="ads">
+        </section>
+        <aside id="left-aside">
+        </aside>
+        <div id="main-wrapper">
+            <main id="main-section">
+                <form id="main-form">
+                    <input style="margin-left:15px;" id="input-file" name="input-file" accept=".json, .xml" type="file" required/>
+                    <input type="submit" class="btn btn-primary" style="background-color: #FF4955; border-color:white;" value="Submit" />
+                </form>
+                <article style="margin-top:20px;">
+                    <div id="post-data" style="padding:20px;">
+                        <p>Status:<span> Pending</span></p>
+                        <p>Imported Product:<span> 0</span></p>
+                        <p>Not Imported Product:<span> 0</span></p>
+                    </div>
+                </article>
+            </main>
+        </div>
+
+</body>
+
+</html>

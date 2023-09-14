@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>New Quote</title>
+
+    <link rel="shortcut icon" type="image/png" href="assests/img/coffee-solid.svg" />
+    <link rel="stylesheet" href="assests/css/employee-page.css" />
+    <link href="assests/css/bootstrap.min.css" rel="stylesheet" />
+
+    <script src="assests/js/new-quote.js"></script>
+    <script src="https://kit.fontawesome.com/3055f91a99.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header id="main-header">
+        <div>
+            <div>
+                <img id="header-logo" src="assests/img/coffee-solid.svg" alt="Logo" />
+                <div>
+                    Order Processing System
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- LOADING PAGE -->
+    <div id="loading-page">
+        <div>
+            <img src="assests/img/coffee-solid.svg" />
+            <div id="dot-loader">
+                <div class="lds-ellipsis">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MAIN CONTAINER -->
+    <div class="container">
+        <section id="ads">
+        </section>
+        <aside id="left-aside">
+        </aside>
+        <div id="main-wrapper">
+            <main id="main-section">
+                <article ">
+                    <div id="post-data " style="padding:20px; ">
+                        <form>
+                            <label for="form-date ">Order: </label>
+                            <input type="date " name="form-date " required><br>
+                            <label for="form-customer-name ">Customer Name: </label>
+                            <input type="text " name="form-customer-name " required><br>
+                            <label for="form-customer-gst ">Customer GST No: </label>
+                            <input type="text " name="form-customer-gst " required><br>
+                            <label for="form-customer-address ">Customer Address: </label>
+                            <textarea name="form-customer-address " required></textarea><br>
+                            <label for="form-customer-city ">Customer City</label>
+                            <input type="text " name="form-customer-city "required><br>
+                            <label for="form-customer-pnumber ">Customer Phone Number: </label>
+                            <input type="text " name="form-customer-pnumber " required><br>
+                            <label for="form-customer-email ">Customer Email: </label>
+                            <input type="email " name="form-customer-email " required><br>
+                            <label for="form-customer-pincode ">Customer PIN Code: </label>
+                            <input type="text " name="form-customer-pincode "required<br>
+                            <table id="form-product " class="table table-striped table-bordered table-hover " style="font-size:smaller ">
+                        
+                            <thead class="table-dark " style="background-color:#FF4955 ">
+                                <tr>
+                                <th >Select</th>
+                                <th>Product ID</th>
+                                <th>Product Name</th>
+                                <th>Product Price</th>
+                                <th>Product Level</th>
+                                <th>Quantity</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox "/></td>
+                                    <td>1213</td>
+                                    <td>White Box</td>
+                                    <td>2002</td>
+                                    <td>3</td>
+                                    <td><input type="number " id=" " /></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox " /></td>
+                                    <td>2343</td>
+                                    <td>Plate</td>
+                                    <td>2002</td>
+                                    <td>1</td>
+                                    <td><input type="number " id=" " /></td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox " /></td>
+                                    <td>2213</td>
+                                    <td>Van</td>
+                                    <td>3542</td>
+                                    <td>2</td>
+                                    <td><input type="number " id=" " /></td>
+                                </tr>
+                            </tbody>    
+                        </table><br>
+                        <p>Shipping Cost:<span> 0</span></p>
+                        <p> Total Order Cost:<span> 0</span></p>
+                        <input type="submit " class="btn btn-dark " style="background-color: #FF4955; border-color:white; color:white; " placeholder="Submit " />
+                        </form>
+                        
+        </div>
+        </article>
+        </main>
+    </div>
+
+</body>
+
+</html>

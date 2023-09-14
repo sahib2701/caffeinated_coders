@@ -1,0 +1,429 @@
+                    @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap");
+                    /*************************************************************************
+    RESET AND INITIAL STYLES
+**************************************************************************/
+                    
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+                    
+                    body {
+                        background: #f5f5f5;
+                        font-family: "Source Sans Pro", sans-serif;
+                        /* propriedades para a fonte ficar mais legível */
+                        text-rendering: optimizeLegibility !important;
+                        -webkit-font-smoothing: antialiased !important;
+                    }
+                    
+                    input,
+                    button {
+                        outline: 0;
+                        font-family: "Source Sans Pro", sans-serif;
+                    }
+                    
+                    a {
+                        text-decoration: none;
+                    }
+                    /*************************************************************************
+    HEADER
+**************************************************************************/
+                    
+                    header#main-header {
+                        height: 52px;
+                        position: fixed;
+                        background: #FF4955;
+                        width: 100vw;
+                        display: flex;
+                        justify-content: center;
+                        z-index: 1;
+                    }
+                    
+                    header#main-header>div {
+                        width: 1188px;
+                        padding-left: 24px;
+                        padding-right: 40px;
+                        display: none;
+                        align-items: center;
+                        justify-content: space-between;
+                    }
+                    
+                    header#main-header>div>div {
+                        display: flex;
+                        align-items: center;
+                        width: 100%;
+                    }
+                    
+                    header#main-header>div>div>span {
+                        display: none;
+                    }
+                    
+                    header#main-header>div>div>img#header-logo {
+                        width: 38px;
+                        height: 38px;
+                        margin-right: 10px;
+                        cursor: pointer;
+                    }
+                    /*************************************************************************
+    MAIN CONTAINER
+**************************************************************************/
+                    
+                    div.container {
+                        max-width: 1188px;
+                        margin: 0 auto;
+                        padding: 0 30px;
+                        padding-top: 60px;
+                        grid-template-columns: 200px 1fr;
+                        column-gap: 20px;
+                        display: none;
+                    }
+                    /**************************************************************************
+    main container > ADS SECTION
+**************************************************************************/
+                    
+                    div.container section#ads {
+                        grid-area: ads;
+                        display: flex;
+                        align-items: flex-end;
+                    }
+                    /**************************************************************************
+    main container > left aside > PROFILE CARD
+**************************************************************************/
+                    
+                    aside#left-aside div#profile-card {
+                        height: auto;
+                        position: fixed;
+                        margin-bottom: 8px;
+                        display: flex;
+                        flex-direction: column;
+                        padding: 5px;
+                        border: 3px solid #FF4955;
+                    }
+                    /**************************************************************************
+    main container > main section > SHARE BOX & FEED SORT
+**************************************************************************/
+                    
+                    main#main-section div#share-box {
+                        background: #fff;
+                        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+                        border-radius: 2px;
+                        margin-bottom: 10px;
+                        display: flex;
+                        flex-direction: column;
+                    }
+                    
+                    main#main-section div#share-box div#button-box {
+                        display: flex;
+                        border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+                    }
+                    
+                    main#main-section div#share-box div#button-box .fas {
+                        font-size: 18px;
+                    }
+                    
+                    main#main-section div#share-box div#button-box button {
+                        background: #fff;
+                        border: 0;
+                        color: #FF4955;
+                        border-right: 1px solid rgba(0, 0, 0, 0.15);
+                        padding: 26px 26.5px;
+                        cursor: pointer;
+                    }
+                    
+                    .btn-post {
+                        width: 100%;
+                        text-align: center;
+                        padding: 26px 17px;
+                    }
+                    
+                    .btn-post:hover {
+                        color: black;
+                    }
+                    
+                    .btn-text {
+                        font-size: 20px;
+                        font-weight: bold;
+                        padding-left: 6px;
+                    }
+                    /**************************************************************************
+    main container > main section > FEED POSTS
+**************************************************************************/
+                    
+                    main#main-section article {
+                        display: flex;
+                        flex-direction: column;
+                        background: #fff;
+                        box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.15), 0 2px 3px rgba(0, 0, 0, 0.2);
+                        border-radius: 2px;
+                        margin-bottom: 8px;
+                        padding: 14px 14px 0;
+                    }
+                    
+                    .p main#main-section article div>.post-data p {
+                        padding: 8px 14px 0;
+                    }
+                    
+                    main#main-section article div>.post-data p span {
+                        color: #0073b1;
+                        font-weight: bold;
+                        cursor: pointer;
+                    }
+                    
+                    main#main-section article div#post-interactions div#interactions-amount {
+                        margin: 7px 16px;
+                        border-bottom: 1px solid #e6e9ec;
+                        padding-bottom: 10px;
+                        display: flex;
+                        align-items: center;
+                    }
+                    
+                    main#main-section article div#post-interactions div#interactions-amount span.fas {
+                        font-size: 8px;
+                        padding: 3px;
+                        margin-right: 3px;
+                        border-radius: 50%;
+                        color: #f3f6f8;
+                        text-shadow: -1px -1px 0 rgba(0, 0, 0, 0.3), 1px -1px 0 rgba(0, 0, 0, 0.3), -1px 1px 0 rgba(0, 0, 0, 0.3), 1px 1px 0 rgba(0, 0, 0, 0.3);
+                        cursor: pointer;
+                    }
+                    
+                    main#main-section article div#post-interactions div#interactions-amount span#amount-info {
+                        font-size: 14px;
+                        color: rgba(0, 0, 0, 0.6);
+                        margin-left: 3px;
+                        cursor: pointer;
+                    }
+                    
+                    main#main-section article div#post-interactions div#interactions-amount span#amount-info span {
+                        font-size: 14px;
+                        font-weight: bold;
+                    }
+                    
+                    main#main-section article div#post-interactions div#interactions-amount span#like-icon {
+                        background: #0092e0;
+                    }
+                    
+                    main#main-section article div#post-interactions div#interactions-amount span#heart-icon {
+                        background: #f67373;
+                    }
+                    
+                    main#main-section article div#post-interactions div#interactions-btns {
+                        margin: 4px 10px;
+                        display: flex;
+                    }
+                    
+                    main#main-section article div#post-interactions div#interactions-btns button {
+                        border: 0;
+                        background: #fff;
+                        color: rgba(0, 0, 0, 0.6);
+                        font-weight: bold;
+                        font-size: 14px;
+                        padding: 2px 5px;
+                        height: 30px;
+                        margin-right: 5px;
+                        cursor: pointer;
+                        display: flex;
+                        align-items: center;
+                    }
+                    
+                    main#main-section article div#post-interactions div#interactions-btns button:hover {
+                        background: #f1f1f1;
+                        color: rgba(0, 0, 0, 0.8);
+                    }
+                    
+                    main#main-section article div#post-interactions div#interactions-btns button span.far {
+                        font-size: 20px;
+                        margin-right: 5px;
+                    }
+                    
+                    main#main-section article div#post-interactions div#interactions-btns button span.fa-thumbs-up {
+                        margin-bottom: 4px;
+                    }
+                    
+                    main#main-section article div#post-interactions div#interactions-btns button span.fa-share-square {
+                        font-size: 18px;
+                    }
+                    /**************************************************************************
+    main container > RIGHT ASIDE
+**************************************************************************/
+                    
+                    div.container aside#right-aside {
+                        grid-area: right-aside;
+                        background-color: #fff;
+                        border: 1px solid #cfcfcf;
+                        border-radius: 2px;
+                        height: 710px;
+                    }
+                    /**************************************************************************
+  
+  
+                    /***************************************************************************
+    container > CONTAINER MEDIA QUERY
+/**************************************************************************/
+                    
+                    @media only screen and (max-width: 1180px) {
+                        div.container {
+                            grid-template-areas: "ads ads" "left-aside main-section";
+                            grid-template-rows: 100px 1fr;
+                            grid-template-columns: 1fr 2fr;
+                        }
+                        div.container aside#right-aside {
+                            display: none;
+                        }
+                    }
+                    
+                    @media only screen and (max-width: 861px) {
+                        div.container {
+                            grid-template-areas: "." "main-section ";
+                            grid-template-rows: 62px 1fr;
+                            grid-template-columns: 1fr;
+                        }
+                        .container>div#main-wrapper {
+                            align-items: center;
+                        }
+                        div.container section#ads {
+                            display: none;
+                        }
+                        div.container aside#left-aside {
+                            display: none;
+                        }
+                    }
+                    
+                    @media only screen and (max-width: 660px) {
+                        div.container {
+                            padding: 0;
+                        }
+                        div.container main#main-section {
+                            max-width: 550px;
+                            width: 100%;
+                            margin: 0;
+                        }
+                        main#main-section div#share-box div#button-box button {
+                            display: none;
+                        }
+                        main#main-section div#share-box div#button-box button#btn-post {
+                            display: block;
+                            padding: 20px 17px;
+                            border-right: 0;
+                        }
+                        main#main-section div#feed-sort button {
+                            margin-right: 10px;
+                        }
+                    }
+                    /**************************************************************************
+    LOADING PAGE
+**************************************************************************/
+                    
+                    div#loading-page>div {
+                        position: fixed;
+                        top: 25%;
+                        left: calc(50% - 32px);
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                    
+                    div#loading-page img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                    
+                    div#dot-loader {
+                        padding-left: 2px;
+                        width: 64px;
+                        height: 64px;
+                    }
+                    /* css loader from loading.io */
+                    
+                    .lds-ellipsis {
+                        display: inline-block;
+                        position: relative;
+                        width: 64px;
+                        height: 64px;
+                    }
+                    
+                    .lds-ellipsis div {
+                        position: absolute;
+                        top: 27px;
+                        width: 11px;
+                        height: 11px;
+                        border-radius: 50%;
+                        background: #FF4955;
+                        animation-timing-function: cubic-bezier(0, 1, 1, 0);
+                    }
+                    
+                    .lds-ellipsis div:nth-child(1) {
+                        left: 6px;
+                        animation: lds-ellipsis1 0.6s infinite;
+                    }
+                    
+                    .lds-ellipsis div:nth-child(2) {
+                        left: 6px;
+                        animation: lds-ellipsis2 0.6s infinite;
+                    }
+                    
+                    .lds-ellipsis div:nth-child(3) {
+                        left: 26px;
+                        animation: lds-ellipsis2 0.6s infinite;
+                    }
+                    
+                    .lds-ellipsis div:nth-child(4) {
+                        left: 45px;
+                        animation: lds-ellipsis3 0.6s infinite;
+                    }
+                    
+                    @keyframes lds-ellipsis1 {
+                        0% {
+                            transform: scale(0);
+                        }
+                        100% {
+                            transform: scale(1);
+                        }
+                    }
+                    
+                    @keyframes lds-ellipsis3 {
+                        0% {
+                            transform: scale(1);
+                        }
+                        100% {
+                            transform: scale(0);
+                        }
+                    }
+                    
+                    @keyframes lds-ellipsis2 {
+                        0% {
+                            transform: translate(0, 0);
+                        }
+                        100% {
+                            transform: translate(19px, 0);
+                        }
+                    }
+                    /***************************************************************************
+    GLOBAL CLASSES
+/**************************************************************************/
+                    
+                    .letter-spacing {
+                        letter-spacing: 0.6px;
+                    }
+                    
+                    .font-16 {
+                        font-size: 16px !important;
+                    }
+                    
+                    .position-fixed {
+                        position: fixed;
+                        top: 60px;
+                    }
+                    
+                    .right-aside-fixed {
+                        background: #fff;
+                        border: 1px solid #cfcfcf;
+                        width: 312px;
+                        height: 440px;
+                    }
+                    
+                    .vanish {
+                        border: 0 !important;
+                        background: transparent !important;
+                    }
